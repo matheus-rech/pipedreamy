@@ -1,6 +1,5 @@
 /** @type {import('ts-jest/dist/types').InitialOptionsTsJest} */
 module.exports = {
-  preset: "ts-jest",
   testEnvironment: "node",
   // See https://kulshekhar.github.io/ts-jest/docs/guides/esm-support
   extensionsToTreatAsEsm: [
@@ -15,6 +14,7 @@ module.exports = {
     "types/.*.types.test..*$",
   ],
   transform: {
+    "^.+\\.tsx?$": ["ts-jest", { tsconfig: "tsconfig.components.json" }],
     "\\.[jt]s$": [
       "ts-jest",
       {
