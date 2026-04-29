@@ -20,6 +20,8 @@
     "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,
     "allowJs": true,
-    "outDir": "${configDir}/dist"
+    "outDir": "${configDir}/dist",
+    "noUnusedLocals": false,
+    "noUnusedParameters": false
   }
 }
